@@ -6,8 +6,8 @@
       <class name="Runner.TestNGTestRunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="2"/>
         </methods>
       </class> <!-- Runner.TestNGTestRunner -->
     </classes>

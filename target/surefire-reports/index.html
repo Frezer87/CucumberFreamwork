@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Experiance for product search in both home and offers page&quot;, &quot;place the order for Products&quot;)">runScenario("Search Experiance for product search in both home and offers page", "place the order for Products")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Runner.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check Vendor File Status&quot;, &quot;Vendor Support Center Homepage&quot;)">runScenario("Check Vendor File Status", "Vendor Support Center Homepage")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -126,10 +126,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Search Experiance for product search in both home and offers page&quot;, &quot;place the order for Products&quot;)">
-                  </a> <!-- runScenario("Search Experiance for product search in both home and offers page", "place the order for Products") -->
+                  <a name="runScenario(&quot;Check Vendor File Status&quot;, &quot;Vendor Support Center Homepage&quot;)">
+                  </a> <!-- runScenario("Check Vendor File Status", "Vendor Support Center Homepage") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Search Experiance for product search in both home and offers page","place the order for Products")</span>
+                  <span class="parameters">("Check Vendor File Status","Vendor Support Center Homepage")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -149,6 +149,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;Runner.FailedTestNGTestRunner&quot;/&gt;
       &lt;class name=&quot;Runner.TestNGTestRunner&quot;/&gt;
+      &lt;class name=&quot;utilities.BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -162,7 +163,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (2 classes)</span>
+                <span class="test-name">Surefire test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,12 +201,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'Runner.TestNGTestRunner')
-data.setCell(0, 3, 14312);
+data.setCell(0, 3, 9616);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -233,27 +234,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Runner.FailedTestNGTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7cab1508)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5b94b04d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">1043 ms</span>
+                <span class="method-start">107 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Runner.TestNGTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7cab1508)</span>
-                <span class="method-start">1419 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@5b94b04d)</span>
+                <span class="method-start">109 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Search Experiance for product search in both home and offers page", "place the order for Products")</span>
-                <span class="method-start">1465 ms</span>
+                <span class="method-name">runScenario("Check Vendor File Status", "Vendor Support Center Homepage")</span>
+                <span class="method-start">1050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">15782 ms</span>
+                <span class="method-start">10673 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

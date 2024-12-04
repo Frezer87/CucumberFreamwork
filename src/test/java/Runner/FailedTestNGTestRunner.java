@@ -16,13 +16,12 @@ import io.cucumber.testng.CucumberOptions;
     glue = "stepDefinition", // Path to the folder containing step definitions
     plugin = { 
         "pretty", // Outputs readable logs for executed steps in the console
-        "json:target/cucumber-reports/Cucumber.json", // Generates JSON report for analysis
-        "html:target/cucumber-reports/Cucumber.html", // Generates HTML report for test execution results
-        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", // ExtentReports for advanced reporting
+        "json:target/cucumber-reports/FailedCucumber.json", // Generates JSON report for failed test cases
+        "html:target/cucumber-reports/FailedCucumber.html", // Generates HTML report for failed scenarios
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", // ExtentReports for detailed reporting
         "rerun:target/failed_scenarios.txt" // Captures failed scenarios for further reruns
     },
-    monochrome = true, // Ensures console output is clean and readable
-    tags = "@offersPage or @placeOrder" // Executes scenarios matching these tags
+    monochrome = true // Ensures console output is clean and readable
 )
 public class FailedTestNGTestRunner extends AbstractTestNGCucumberTests {
 
@@ -32,7 +31,7 @@ public class FailedTestNGTestRunner extends AbstractTestNGCucumberTests {
      * - Improves execution efficiency for large suites.
      */
     @Override
-    @DataProvider(parallel = true) // Set to 'true' for parallel execution, 'false' for sequential execution
+    @DataProvider(parallel = false) // Set to 'true' for parallel execution, 'false' for sequential execution
     public Object[][] scenarios() {
         // Retrieves scenarios from the parent class (AbstractTestNGCucumberTests)
         return super.scenarios();
